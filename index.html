@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tabla 23 de septiembre</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+</head>
+<body bgcolor="#CDDEFC">
+	<nav>
+		<li><a href="#">Inicio</a></li>
+		<li><a href="#">Galería</a></li>
+		<li><a href="#">Correo</a></li>
+		<li><a href="#">Nosotros</a></li>
+		<li><a href="#">Dirección</a></li>
+	</nav>
+	<br><br>
+	<center><h1>Formulario</h1>
+	</center>
+	<form action="procesar.php"method="post">
+	<label for="title">Datos</label><br><br>
+	<input type="text" name="name" placeholder="Ingrese el nombre" required="null" minlength="5" maxlength="25"><br><br>
+	<input type="email" name="email" placeholder="Ingrese su correo electrónico" required="null"><br><br>
+	<input type="password" name="password" placeholder="Ingrese una contraseña" required="null" minlength="8" maxlength="20"><br><br>
+	<input type="date" name="date" required="null"><br><br>
+	<input type="month" name="month"required="null"><br><br>
+	<input type="week" name="week"required="null"><br><br>
+	<input type="color" name="color" value="#F3F8F7" required="null"><br><br>
+	<input type="range" name="range" step="25" required="null"><br><br>
+	<input type="file" name="file" multiple required="null"><br><br>
+	<label>¿Cuál es tu sexo?</label><br><br>
+	<input type="radio" name="gender" required="null"><label>Masculino</label><br><br>
+	<input type="radio" name="gender" required="null"><label>Femenino</label><br><br>
+	<input type="radio" name="gender" required="null"><label>Prefiero no decirlo</label><br><br>
+	<label>Escoje tus géneros de canciones preferidas</label><br><br>
+	<input type="checkbox" name="checkbox"><label>Salsa</label><br><br>
+	<input type="checkbox" name="checkbox"><label>Reggae</label><br><br>
+	<input type="checkbox" name="checkbox"><label>Pasillo</label><br><br>
+	<input type="time" name="time"required="null"><br><br>
+	<textarea name="textarea" cols="30" rows="10" placeholder="Deja un mensaje (opcional)"></textarea><br><br>
+	<label>Ingresa una URL</label><br><br>
+	<input type="url" name="url"required="null"><br><br>
+	<label>¿Cuál es tu color favorito?</label><br><br>
+	<select>
+		<option>Amarillo</option>
+		<option>Azul</option>
+		<option>Rojo</option>
+		<option>Negro</option>
+		<option>Verde</option>
+	</select><br><br>
+	<input type="submit" value="Enviar">
+	<input type="reset" value="Limpiar">
+	
+	</form>
+</body>
+</html>
